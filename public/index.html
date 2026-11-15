@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FrameSound | Fotoğraf + Ses → MP4</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#eaf0fa;background:#0a0e17;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 100% 0,#203254 0,transparent 48%),#0a0e17}header,main,footer{max-width:1120px;margin:auto;padding-left:20px;padding-right:20px}header{display:flex;justify-content:space-between;align-items:center;padding-top:27px;padding-bottom:18px}.logo{font-size:22px;letter-spacing:-.7px;font-weight:850}.logo b{color:#72b2ff}.tag{font-size:12px;border:1px solid #344968;color:#b6cff4;padding:8px 12px;border-radius:25px}h1{font-size:clamp(27px,4vw,45px);letter-spacing:-1.3px;margin:10px 0}h1 em{font-style:normal;color:#7db8ff}p{color:#9eb1ca;line-height:1.55}.layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(310px,.85fr);align-items:start;gap:20px}.card{background:#151e2e;border:1px solid #2b3b53;border-radius:18px;padding:23px;margin-bottom:18px;box-shadow:0 14px 40px #0002}h2{font-size:17px;margin:0 0 17px}.step{display:inline-grid;place-items:center;background:#263c5b;color:#aaceff;border-radius:8px;font-size:12px;width:27px;height:27px;margin-right:8px}.uploads{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pick{display:grid;gap:8px;place-items:center;text-align:center;border:1px dashed #567295;border-radius:13px;background:#111a29;min-height:132px;padding:14px;cursor:pointer}.pick:focus-within,.pick:hover{border-color:#82bdff;background:#152941}.pick .symbol{font-size:30px}.pick small{color:#9baec8;font-size:11px;overflow-wrap:anywhere;max-width:100%}.pick input{position:absolute;width:1px;height:1px;opacity:0}.pick strong{font-size:13px}.ratio-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.ratio-button{background:#111a29;color:#b4c5d9;border:1px solid #394e68;padding:13px 7px;border-radius:11px;cursor:pointer;font:inherit}.ratio-button[aria-pressed=true]{background:#1c3b60;border-color:#83bdff;color:white}.ratio-button strong{display:block;font-size:14px}.ratio-button small{display:block;color:#a3b4c8;font-size:11px;margin-top:4px}.ratio-glyph{border:2px solid currentColor;display:block;margin:0 auto 10px;border-radius:3px}.custom{display:none;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.custom.open{display:grid}.field{display:grid;gap:7px;font-size:13px;color:#becde0}.field input{width:100%;background:#0d1523;color:white;border:1px solid #4b607c;border-radius:8px;padding:10px;font:inherit}.slider{margin:17px 0 21px}.slider label{display:flex;justify-content:space-between;color:#bdcce0;align-items:center}.slider output{font-size:19px;color:#fff;font-weight:700}.slider input{width:100%;accent-color:#72b0ff;margin-top:13px}.scale{display:flex;justify-content:space-between;color:#8095b2;font-size:11px}.hint{font-size:12px;margin:10px 0;color:#91a7c2}.check{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:14px;margin-top:20px}.check input{accent-color:#69acff;width:18px;height:18px}.primary{border:0;background:linear-gradient(90deg,#2774e7,#61aafd);color:white;border-radius:11px;font:inherit;font-weight:800;padding:15px 18px;width:100%;margin-top:22px;cursor:pointer}.primary:disabled{opacity:.5;cursor:wait}.preview-card{position:sticky;top:18px}.preview-screen{height:270px;background:repeating-linear-gradient(45deg,#0d1624,#0d1624 10px,#142236 10px,#142236 20px);border-radius:13px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px}.frame{height:86%;max-width:95%;aspect-ratio:9/16;display:flex;align-items:center;justify-content:center;background:#172c46;border:1px solid #6f88a8;overflow:hidden;box-shadow:0 6px 30px #0008;color:#93aecf;font-size:12px;text-align:center}.frame img{width:100%;height:100%;object-fit:contain;display:none}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:#101b2b;border:1px solid #2c405a;border-radius:11px;padding:14px}.stat small{display:block;font-size:11px;color:#90a6c0;margin-bottom:8px}.stat strong{font-size:22px;letter-spacing:-.4px}.separator{height:1px;background:#2b3c53;margin:18px 0}.message{display:none;margin-top:15px;padding:13px;border-radius:10px;background:#1c3856;font-size:13px;color:#d0e5fc}.message.error{background:#4e2934;color:#ffe3e8}.result{display:none}.file{display:flex;justify-content:space-between;align-items:center;padding:13px 0;gap:12px;border-bottom:1px solid #304057}.file:last-child{border:0}.file strong{display:block;font-size:14px}.file small{display:block;color:#97aec9;margin-top:4px}.download{display:inline-block;padding:10px 12px;background:#22436b;border:1px solid #5c94e1;border-radius:9px;color:#fff;text-decoration:none;font-size:12px;white-space:nowrap}.zip{margin-top:15px;width:100%;text-align:center;font-size:14px}.notice{font-size:12px;color:#8099b8}footer{text-align:center;font-size:12px;color:#788ba5;padding-top:18px;padding-bottom:38px}@media(max-width:850px){.layout{grid-template-columns:1fr}.preview-card{position:static}}@media(max-width:480px){.card{padding:16px}.uploads{grid-template-columns:1fr}.ratio-grid{gap:5px}.ratio-button{padding:11px 3px}.ratio-button strong{font-size:12px}}
+</style></head>
+<body><header><div class="logo">◈ Frame<b>Sound</b></div><div class="tag">Fotoğraf + Ses → MP4</div></header>
+<main><h1>Tek fotoğraf, tek ses. <em>Hazır video.</em></h1><p>Story, kare veya yatay MP4 oluştur. Kaliteyi ve hedef boyutu ayarla; çıktıları ister ayrı ayrı ister ZIP olarak indir.</p>
+<div class="layout"><div><form id="convert">
+<section class="card"><h2><span class="step">01</span> Dosyalarını yükle</h2><div class="uploads">
+<label class="pick"><span class="symbol">▧</span><strong>Fotoğraf seç</strong><small id="imageName">JPG · PNG · WebP</small><input name="image" id="image" type="file" accept=".jpg,.jpeg,.png,.webp" required></label>
+<label class="pick"><span class="symbol">♫</span><strong>Ses dosyası seç</strong><small id="audioName">MP3 · WAV · M4A · AAC · OGG · FLAC</small><input name="audio" id="audio" type="file" accept=".mp3,.wav,.m4a,.aac,.ogg,.flac,audio/*" required></label>
+</div><audio id="player" controls style="display:none;width:100%;margin-top:15px"></audio></section>
+<section class="card"><h2><span class="step">02</span> Video boyutu</h2><div class="ratio-grid" id="ratios">
+<button type="button" class="ratio-button" data-layout="square" aria-pressed="false"><span class="ratio-glyph" style="height:23px;width:23px"></span><strong>1:1</strong><small>Kare</small></button>
+<button type="button" class="ratio-button" data-layout="story" aria-pressed="true"><span class="ratio-glyph" style="height:26px;width:15px"></span><strong>9:16</strong><small>Story</small></button>
+<button type="button" class="ratio-button" data-layout="landscape" aria-pressed="false"><span class="ratio-glyph" style="height:16px;width:27px"></span><strong>16:9</strong><small>Yatay</small></button>
+<button type="button" class="ratio-button" data-layout="custom" aria-pressed="false"><span class="ratio-glyph" style="height:19px;width:24px;border-style:dashed"></span><strong>Özel</strong><small>Piksel</small></button>
+</div><input type="hidden" name="layout" id="layout" value="story">
+<div class="custom" id="custom"><label class="field">Genişlik (px)<input name="width" id="width" type="number" min="240" max="3840" step="2" value="1080"></label><label class="field">Yükseklik (px)<input name="height" id="height" type="number" min="240" max="3840" step="2" value="1920"></label></div>
+<p class="hint" id="dimensions">1080 × 1920 piksel · Fotoğraf kırpılmaz.</p></section>
+<section class="card"><h2><span class="step">03</span> Kalite & sıkıştırma</h2>
+<div class="slider"><label for="quality">Video kalitesi <output id="qualityValue">70%</output></label><input name="quality" id="quality" type="range" min="1" max="100" value="70"><div class="scale"><span>Küçük dosya</span><span>Yüksek kalite</span></div></div>
+<div class="slider"><label for="reduction">Ek sıkıştırma hedefi <output id="reductionValue">0%</output></label><input name="reduction" id="reduction" type="range" min="0" max="85" value="0"><div class="scale"><span>Yok</span><span>Daha fazla</span></div></div>
+<p class="hint">Boyut yüzdeleri kodlama hedefidir; gerçek çıktı boyutu ses biçimi ve sabit görüntü sıkıştırmasına bağlı olarak farklılık gösterir.</p>
+<label class="check"><input type="checkbox" name="split" id="split" value="true" checked>60 saniyelik story dosyalarını da oluştur</label>
+<button class="primary" id="submit" type="submit">✦ MP4 oluştur</button><div role="status" aria-live="polite" id="status" class="message"></div></section></form>
+<section class="card result" id="results"><h2>✓ Dönüştürme tamamlandı</h2><p class="hint" id="summary"></p><div id="files"></div><a class="download zip" id="zip" href="#" download="story-parcalari.zip" style="display:none">↓ Bütün story parçalarını ZIP indir</a></section>
+</div><aside class="card preview-card"><h2>Canlı önizleme</h2><div class="preview-screen"><div class="frame" id="frame"><span id="empty">Fotoğraf önizlemesi</span><img id="preview" alt="Yüklenecek fotoğraf"></div></div>
+<div class="stats"><div class="stat"><small>Tahmini MB</small><strong id="estimated">—</strong></div><div class="stat"><small>Ses süresi</small><strong id="duration">—</strong></div><div class="stat"><small>Story dosyası</small><strong id="parts">—</strong></div><div class="stat"><small>Oran</small><strong id="ratio">9:16</strong></div></div>
+<p class="notice">Tahmini MB kesin değildir. Gerçek dosya boyutu dönüştürme tamamlanınca gösterilir.</p></aside></div>
+</main><footer>Dosyalar sunucuda geçici tutulur ve yaklaşık 2 saat sonra silinir. Maksimum ses süresi 60 dakikadır.</footer>
+<script>
+const $=id=>document.getElementById(id),form=$('convert'),preset={square:[1080,1080],story:[1080,1920],landscape:[1920,1080]};
+let duration=0,imageObject=null,audioObject=null;
+const mb=n=>(n/1048576).toLocaleString('tr-TR',{maximumFractionDigits:2})+' MB';
+const time=n=>{if(!Number.isFinite(n)||n<0)return '—';const v=Math.ceil(n);return String(Math.floor(v/60))+':'+String(v%60).padStart(2,'0')};
+const dimensions=()=>preset[$('layout').value]||[Number($('width').value),Number($('height').value)];
+function update(){
+const [w,h]=dimensions(),q=Number($('quality').value),r=Number($('reduction').value),type=$('layout').value;
+$('qualityValue').value=q+'%';$('reductionValue').value=r+'%';
+$('ratio').textContent={square:'1:1',story:'9:16',landscape:'16:9',custom:'Özel'}[type];
+$('dimensions').textContent=w+' × '+h+' piksel · Fotoğraf oranı korunur, kesilmez.';
+if(w>0&&h>0){$('frame').style.aspectRatio=w+'/'+h;$('frame').style.height=w>h?'auto':'86%';$('frame').style.width=w>h?'90%':'auto';}
+$('duration').textContent=duration?time(duration):'—';$('parts').textContent=duration?($('split').checked?Math.ceil(duration/60):'Kapalı'):'—';
+if(duration>0&&Number.isInteger(w)&&Number.isInteger(h)&&w>=240&&h>=240&&w<=3840&&h<=3840&&w%2===0&&h%2===0&&w*h<=8294400){
+const p=Math.sqrt(w*h/(1080*1920)),v=Math.max(18,Math.round((90+q*5.1)*p*(1-r/100))),a=Math.max(48,Math.round((64+q*1.28)*(1-r/130)));
+$('estimated').textContent=mb(duration*(v+a)*1000/8*1.025);
+}else $('estimated').textContent='—';
+}
+document.querySelectorAll('.ratio-button').forEach(btn=>btn.addEventListener('click',()=>{
+$('layout').value=btn.dataset.layout;
+document.querySelectorAll('.ratio-button').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+$('custom').classList.toggle('open',btn.dataset.layout==='custom');update();
+}));
+['quality','reduction','width','height','split'].forEach(id=>$(id).addEventListener('input',update));
+$('image').addEventListener('change',()=>{
+if(imageObject)URL.revokeObjectURL(imageObject);
+const file=$('image').files[0];$('imageName').textContent=file?file.name:'JPG · PNG · WebP';
+$('preview').style.display=file?'block':'none';$('empty').style.display=file?'none':'block';
+if(file){imageObject=URL.createObjectURL(file);$('preview').src=imageObject;}
+});
+$('audio').addEventListener('change',()=>{
+if(audioObject)URL.revokeObjectURL(audioObject);
+const file=$('audio').files[0];duration=0;$('audioName').textContent=file?file.name:'MP3 · WAV · M4A · AAC · OGG · FLAC';
+$('player').style.display=file?'block':'none';
+if(file){audioObject=URL.createObjectURL(file);$('player').src=audioObject;$('player').load();}
+update();
+});
+$('player').addEventListener('loadedmetadata',()=>{duration=Number.isFinite($('player').duration)?$('player').duration:0;update()});
+form.addEventListener('submit',async e=>{
+e.preventDefault();
+const [w,h]=dimensions(),status=$('status'),submit=$('submit');
+status.style.display='block';status.className='message';
+if(!Number.isInteger(w)||!Number.isInteger(h)||w<240||h<240||w>3840||h>3840||w%2||h%2||w*h>8294400){
+status.className='message error';status.textContent='Özel boyutlar 240–3840 arasında çift piksel değerleri olmalıdır; en fazla 8,3 MP.';return;
+}
+submit.disabled=true;submit.textContent='Dönüştürülüyor…';$('results').style.display='none';status.textContent='Dosyalar yükleniyor ve MP4 hazırlanıyor. Sayfayı kapatmayın.';
+try{
+const data=new FormData(form);data.set('split',String($('split').checked));
+const response=await fetch('/api/convert',{method:'POST',body:data});
+const result=await response.json();
+if(!response.ok)throw Error(result.error||'Dönüştürme başarısız.');
+const full=result.files[0];
+$('summary').textContent='Tam video '+time(full.duration)+' · Gerçek boyut '+mb(full.bytes)+' · Tahmin '+mb(result.estimatedBytes);
+$('files').replaceChildren();
+for(const f of result.files){
+ const row=document.createElement('div');row.className='file';
+ const col=document.createElement('div'),name=document.createElement('strong'),meta=document.createElement('small'),link=document.createElement('a');
+ name.textContent=f.name;meta.textContent=time(f.duration)+' · '+mb(f.bytes);col.append(name,meta);
+ link.className='download';link.href=f.url;link.download=f.filename;link.textContent='MP4 indir';row.append(col,link);$('files').append(row);
+}
+$('zip').style.display=result.zipUrl?'block':'none';if(result.zipUrl)$('zip').href=result.zipUrl;
+$('results').style.display='block';status.style.display='none';$('results').scrollIntoView({behavior:'smooth',block:'start'});
+}catch(error){status.className='message error';status.textContent=error.message;}
+finally{submit.disabled=false;submit.textContent='✦ MP4 oluştur';}
+});update();
+</script></body></html>
